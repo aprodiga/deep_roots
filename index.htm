@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Deep Roots</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- Fonts -->
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Staatliches'>
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cabin+Sketch'>
+
+		<!-- Place Autocomplete -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3XfuMJJGzaU8TUItQM7XWD4esZdbpgtA&libraries=places"></script>
+	</head>
+	<body>
+		<h1>The Importance of Deep Roots</h1>
+		<p>If we deeply plant our roots, we will not be shaken even when waves come crashing.</p>
+
+		<h2>How we can help you</h2>
+		<p>We have a wide network of pastors, theologians, and missionaries all across the world to help deepen your roots in the Word and grow your faith past what you have ever experienced before.</p>
+		<h1>How would you define your faith?</h1>
+		<p>These questions are for the purpose of understanding where you are to best help you. Please answer honestly.</p>
+
+		<form action="/action_page.php" method="get">
+			<div class="define_faith">
+				<h2>Where are your currently in your life of faith?</h2>
+				<!--
+				<input type="radio" name= "current_faith" value="unsure"> Unsure
+			  	<input type="radio" name= "current_faith" value="stagnant"> Stagnant 
+			  	<input type="radio" name= "current_faith" value="stable"> Stable
+			  	<input type="radio" name= "current_faith" value="strong"> Strong
+				-->
+				<input type="radio" name= "current_faith" value="missing"> It feels like God is missing... <br>
+				<input type="radio" name= "current_faith" value="complicated"> It's complicated <br>
+				<input type="radio" name= "current_faith" value="ok"> Ok, but could be better <br>
+				<input type="radio" name= "current_faith" value="close"> I am so close to God <br>
+			</div>
+			<div class="understanding">
+			  	<h2>How well do you understand the Bible?</h2>
+			  	<div class="slidecontainer">
+				  <input type="range" min="0" max="10" value="5" class="slider" id="myRange">
+				  <p><span id="demo"></span></p>
+				</div>
+
+				<script>
+					var slider = document.getElementById("myRange");
+					var output = document.getElementById("demo");
+					output.innerHTML = slider.value;
+
+					slider.oninput = function() {
+					  output.innerHTML = this.value;
+					}
+				</script>
+			</div>
+			<div class="grow">
+				<h2>What area do you want to grow in?</h2>
+				<input type="checkbox" value="foundation"> Having a Foundation of a Life of Faith <br>
+			  	<input type="checkbox" value="prayer"> Prayer <br>
+			  	<input type="checkbox" value="accountability"> Accountability <br>
+			  	<input type="checkbox" value="mentoring/leading"> Mentoring/Leading Others <br>
+			  	<input type="checkbox" value="whole"> Understanding the Bible as a Whole <br>
+		  	</div>
+		  	<div class="clearfix">
+		  	</div>
+		  	<h1>Are you ready to deepen your roots?</h1>
+		  	<p>Please list out your availabilty and area so we can connect you to someone that best matches your schedule and location.</p>
+		  	<h2>Location</h2>
+		  	<input type="text" size="50" id="autocomplete"/>
+		    <script>
+		      var input = document.getElementById('autocomplete');
+		      var autocomplete = new google.maps.places.Autocomplete(input);
+		    </script>
+		  	<h2>Availability</h2>
+		  	<table id="availabilty" border="1" align="center">
+		  		<tr>
+		  			<td></td>
+		  			<th>Sunday</th>
+		  			<th>Monday</th>
+		  			<th>Tuesday</th>
+		  			<th>Wednesday</th>
+		  			<th>Thursday</th>
+		  			<th>Friday</th>
+		  			<th>Saturday</th>
+		  		</tr>
+		  		<tr>
+		  			<th>Midnight</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>1 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>2 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>3 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>4 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>5 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>6 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>7 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>8 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>9 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>10 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>11 AM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>Noon</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>1 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>2 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>3 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>4 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>5 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>6 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>7 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>8 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>9 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>10 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>11 PM</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  		<tr>
+		  			<th>Midnight</th>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)"></td>
+		  		</tr>
+		  	</table>
+		  	<script type="text/javascript">
+		  		function content(elem)
+		  		{
+		  			elem.style.backgroundColor= "#ffbf00";
+		  			
+		  			//p.innerHTML= 'You cliked on cell: ' + elem.innerText;
+		  			
+		  			var table= document.getElementById("availabilty"), rIndex, cIndex;
+
+		  			for (var i= 0; i < table.rows.length; ++i) //table rows
+		  			{
+		  				for (var j= 0; j < table.rows[i].cells.length; ++j) //row cells
+		  				{
+		  					rIndex= elem.parentElement.rowIndex;
+		  					cIndex= elem.cellIndex;
+		  					console.log("Row: " + rIndex + " Cell: " + cIndex);
+		  					//console.log("Day: " + table[0][cIndex].innerText + " Time: " + table[rIndex][0].innerText);
+		  				}
+		  			}
+		  		}
+		  	</script>
+	  	
+
+		  	<h2>Let's get in touch!</h2>
+		    <input type="tel" size="50" name="phone" placeholder="Phone number" class="form-phone" required><br>
+		    <input type="text" size="50" name="fname" placeholder="First name" class="form-fname" required><br>
+		    <input type="text" size="50" name="lname" placeholder="Last name" class="form-lname" required><br>
+		    <textarea rows= "10" cols = "50" name="about" placeholder="Tell us about yourself!" class="form-about"></textarea><br>
+		    <input type="submit" name="submit" value="I'm ready" class="form-submit">
+		</form>
+	</body>
+</html>
