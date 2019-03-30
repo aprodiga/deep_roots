@@ -65,14 +65,26 @@ h1, h2
 	text-shadow: 2px 2px 4px #000000;
 }
 
+h1
+{
+	font-size: 46px;
+}
+
+h2
+{
+	font-size: 35px;
+}
+
 p, th, td
 {
 	font-family: Cabin Sketch;
+	font-size: 19px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 th, td
 {
-	width: 75px;
+	width: 90px;
 }
 
 .define_faith, .understanding, .grow
@@ -82,6 +94,7 @@ th, td
 	padding: 5px;
 	margin: 5px;
 	font-family: Cabin Sketch;
+	font-size: 19px;
 	text-align: left;
 	width: 350px;
 	/*background-color: hsla(31, 51%, 11%, .5);*/
@@ -99,7 +112,7 @@ th, td
 
 #demo
 {
-	font-size: 50px;
+	font-size: 60px;
 	/*font-weight: bold;*/
 }
 
@@ -116,6 +129,7 @@ th, td
 input, textarea, #phone_input
 {
 	font-family: Cabin Sketch;
+	font-size: 19px;
   	margin: 10px;
   	padding: 10px;
   	border-radius: 25px;
@@ -124,7 +138,7 @@ input, textarea, #phone_input
 input[type="submit"]
 {
 	font-family: Cabin Sketch;
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: bold;
 	background-color: #ffbf00;
 	border: #ffbf00;
