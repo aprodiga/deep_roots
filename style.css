@@ -75,11 +75,63 @@ h2
 	font-size: 35px;
 }
 
+#verse
+{
+	background: hsla(48, 100%, 98%, .85);
+	color: #0d2816;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+blockquote {
+	font-weight: 100;
+	font-size: 2rem;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	/*color: #ffbf00;*/
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
+}
+
+cite {
+	line-height: 3;
+	text-align: left;
+	font-size: 20px;
+} 
+
 p, th, td
 {
 	font-family: Cabin Sketch;
 	font-size: 19px;
 	text-shadow: 2px 2px 4px #000000;
+}
+
+span
+{
+	font-size: 30px;
 }
 
 th, td
