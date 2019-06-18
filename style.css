@@ -173,6 +173,12 @@ th, td
 	clear: both;
 }
 
+.pac-container, .pac-item /*google autocomplete*/
+{
+    font-family: Cabin Sketch;
+    font-size: 1px;
+}
+
 #phone_input
 {
 	color: black;
