@@ -6,6 +6,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+		<!-- load the jquery from url-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
@@ -79,7 +82,7 @@
 
 		<form action="/action_page.php" method="get">
 			<div class="define_faith">
-				<h2>Where are your currently in your life of faith?</h2>
+				<h2>Where are you currently in your life of faith?</h2>
 				<!--
 				<input type="radio" name= "current_faith" value="unsure"> Unsure
 			  	<input type="radio" name= "current_faith" value="stagnant"> Stagnant 
@@ -143,255 +146,245 @@
 		  			<th>Friday</th>
 		  			<th>Saturday</th>
 		  		</tr>
-		  		<tr>
-		  			<th>Midnight</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  		</tr>
-		  		<tr>
+		  		<tr id="1AM">
 		  			<th>1 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="2AM">
 		  			<th>2 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="3AM">
 		  			<th>3 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="4AM">
 		  			<th>4 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="5AM">
 		  			<th>5 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="6AM">
 		  			<th>6 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="7AM">
 		  			<th>7 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="8AM">
 		  			<th>8 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="9AM">
 		  			<th>9 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="10AM">
 		  			<th>10 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="11AM">
 		  			<th>11 AM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="Noon">
 		  			<th>Noon</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="1PM">
 		  			<th>1 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="2PM">
 		  			<th>2 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="3PM">
 		  			<th>3 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="4PM">
 		  			<th>4 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="5PM">
 		  			<th>5 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="6PM">
 		  			<th>6 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="7PM">
 		  			<th>7 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="8PM">
 		  			<th>8 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="9PM">
 		  			<th>9 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="10PM">
 		  			<th>10 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="11PM">
 		  			<th>11 PM</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
-		  		<tr>
+		  		<tr id="Midnight">
 		  			<th>Midnight</th>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
-		  			<td onclick="content(this)"></td>
+		  			<td onclick="content(this)" class="Sun"></td>
+		  			<td onclick="content(this)" class="M"></td>
+		  			<td onclick="content(this)" class="Tu"></td>
+		  			<td onclick="content(this)" class="W"></td>
+		  			<td onclick="content(this)" class="Th"></td>
+		  			<td onclick="content(this)" class="F"></td>
+		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
 		  	</table>
 		  	<script type="text/javascript">
@@ -404,23 +397,11 @@
 		  			else //fill availability
 		  			{
 			  			elem.style.backgroundColor= "#ffbf00";
-		  			}
-		  			
-		  			//p.innerHTML= 'You clicked on cell: ' + elem.innerText;
-		  			
-		  			var table= document.getElementById("availabilty"), rIndex, cIndex;
 
-		  			for (var i= 0; i < table.rows.length; ++i) //table rows
-		  			{
-		  				for (var j= 0; j < table.rows[i].cells.length; ++j) //row cells
-		  				{
-		  					rIndex= elem.parentElement.rowIndex;
-		  					cIndex= elem.cellIndex;
-		  					console.log("Row: " + rIndex + " Cell: " + cIndex);
-		  					//OR COULD TRANSLATE COLS/ROWS TO THEIR DAY/TIME EQUIVALENT
-		  					//console.log("Day: " + table[0][cIndex].innerText + " Time: " + table[rIndex][0].innerText);
-		  				}
 		  			}
+
+		  			console.log("Day: " + elem.className);
+		  			console.log("Time: " + elem.closest("tr").id);
 		  		}
 		  	</script>
 	  	
