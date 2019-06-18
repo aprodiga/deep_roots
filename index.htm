@@ -8,6 +8,8 @@
 
 		<!-- load the jquery from url-->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<!-- load the script.js from relative path-->
+    	<script src="script.js" type="text/javascript" defer="defer"></script>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -21,6 +23,11 @@
 
 		<!-- Phone Number Validation -->
 		<link rel="stylesheet" href="C:Users/ajpro/node_modules/intl-tel-input/build/css/intlTelInput.css">
+		<script src="C:/Users/ajpro/node_modules/intl-tel-input/build/js/intlTelInput.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+		<!--<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="C:/Users/ajpro/node_modules/intl-tel-input/build/js/intlTelInput-jquery.min.js"></script>-->
+
 		<!--
 		<script async="" src="https://www.google-analytics.com/analytics.js"></script>
 		<script src="//www.google-analytics.com/cx/api.js?experiment=Zk8xfNOrTLiG-3EAdjS3Bw"></script>
@@ -81,6 +88,13 @@
 		There is no judgment, so please, answer honestly.</p>
 
 		<form action="/action_page.php" method="get">
+			<div class="how_long_believer">
+				<h2>How long have you had your faith?</h2>
+				<input type="radio" name= "faith_timeframe" value="new" required> I'm brand new to it <br>
+				<input type="radio" name= "faith_timeframe" value="awhile" required> For awhile <br>
+				<input type="radio" name= "faith_timeframe" value="grew_up" required> I grew up in it <br>
+			</div>
+
 			<div class="define_faith">
 				<h2>Where are you currently in your life of faith?</h2>
 				<!--
@@ -92,7 +106,7 @@
 				<input type="radio" name= "current_faith" value="missing" required> It feels like God is missing... <br>
 				<input type="radio" name= "current_faith" value="complicated"> It's complicated <br>
 				<input type="radio" name= "current_faith" value="ok"> Ok, but could be better <br>
-				<input type="radio" name= "current_faith" value="close"> I am so close to God <br>
+				<input type="radio" name= "current_faith" value="close"> My relationship to God is the closest it's ever been <br>
 			</div>
 
 			<div class="understanding">
@@ -101,16 +115,6 @@
 				  <input type="range" min="0" max="10" value="5" class="slider" id="myRange">
 				  <p><span id="demo"></span></p>
 				</div>
-
-				<script>
-					var slider = document.getElementById("myRange");
-					var output = document.getElementById("demo");
-					output.innerHTML = slider.value;
-
-					slider.oninput = function() {
-					  output.innerHTML = this.value;
-					}
-				</script>
 			</div>
 
 			<div class="grow">
@@ -129,10 +133,6 @@
 
 		  	<h2>Location</h2>
 		  	<input type="text" size="50" id="autocomplete"/>
-		    <script>
-		      var input = document.getElementById('autocomplete');
-		      var autocomplete = new google.maps.places.Autocomplete(input);
-		    </script>
 
 		  	<h2>Availability</h2>
 		  	<table id="availabilty" border="1" align="center">
@@ -387,23 +387,6 @@
 		  			<td onclick="content(this)" class="Sat"></td>
 		  		</tr>
 		  	</table>
-		  	<script type="text/javascript">
-		  		function content(elem)
-		  		{
-		  			if (elem.style.backgroundColor != "") //unfill availability
-		  			{
-		  				elem.style.backgroundColor= ""; 
-		  			}
-		  			else //fill availability
-		  			{
-			  			elem.style.backgroundColor= "#ffbf00";
-
-		  			}
-
-		  			console.log("Day: " + elem.className);
-		  			console.log("Time: " + elem.closest("tr").id);
-		  		}
-		  	</script>
 	  	
 		  	<h2>Let's get in touch!</h2>
 		    <div id="phone_input"><input type="tel" class="form-phone" required> <br></div>
@@ -413,55 +396,10 @@
 		    <textarea rows= "10" cols = "50" name="about" placeholder="Tell us about yourself!" class="form-about"></textarea><br>
 		    <input type="submit" name="submit" value="I'm ready" class="form-submit">
 
-		    <!-- Phone Number Validation -->
-		    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-		    <!--<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-			<script src="C:/Users/ajpro/node_modules/intl-tel-input/build/js/intlTelInput-jquery.min.js"></script>-->
-
-		    <script src="C:/Users/ajpro/node_modules/intl-tel-input/build/js/intlTelInput.js"></script>
-			<script>
-			  var input = document.querySelector(".form-phone");
-			  //window.intlTelInput(input);
-			  
-			  window.intlTelInput(input, ({
-			  	/*
-			  	// whether or not to allow the dropdown
-			  	allowDropdown: true,
-			  	// if there is just a dial code in the input: remove it on blur, and re-add it on focus
-			  	autoHideDialCode: true,
-			  	// add a placeholder in the input with an example number for the selected country
-			  	autoPlaceholder: "polite",
-			  	// modify the auto placeholder
-			  	customPlaceholder: null,
-			  	// append menu to specified element
-			  	dropdownContainer: null,
-			  	// don't display these countries
-			  	excludeCountries: [],
-			  	// format the input value during initialisation and on setNumber
-			  	formatOnDisplay: true,
-			  	// geoIp lookup function
-			  	geoIpLookup: null,
-			  	// inject a hidden input with this name, and on submit, populate it with the result of getNumber
-			  	hiddenInput: "",
-			  	// initial country
-			  	initialCountry: "",
-			  	// localized country names e.g. { 'de': 'Deutschland' }
-			  	localizedCountries: null,
-			  	// don't insert international dial codes
-			  	nationalMode: true,
-			  	// display only these countries
-			  	onlyCountries: [],
-			  	// number type to use for placeholders
-			  	placeholderNumberType: "MOBILE",
-			  	// the countries at the top of the list. defaults to united states and united kingdom
-			  	preferredCountries: [ "us", "gb" ],
-			  	// display the country dial code next to the selected flag so it's not part of the typed number
-			  	separateDialCode: false,
-			  	*/
-			  	// specify the path to the libphonenumber script to enable validation/formatting
-			  	utilsScript: "C:/Users/ajpro/node_modules/intl-tel-input/build/js/utils.js"
-			  }));
-			</script> 
 		</form>
 	</body>
 </html>
+
+<!-- CREATE SUCCESS PAGE -->
+<!-- MAKE CHECKS REQUIRED, LOCATION & LANG REQUIRED & AVAILABILITY? -->
+<!-- ADD TRANSLATE PAGE WIDGET -->
